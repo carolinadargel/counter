@@ -1,0 +1,15 @@
+<div [ngStyle]="{'background-color': background}" class="container-fluid background">
+<section class="counter">
+
+  <p>Counter is:
+    <span id='count' [textContent]="count"></span>
+  </p>
+
+<br><br>
+
+    <app-button [label]="action"
+    (click)="updateCount()"></app-button>
+
+
+</section>
+</div>

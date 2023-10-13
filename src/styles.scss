@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --positive-bg-color: #e74c3c;
+  --negative-bg-color: #27ae60;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+
+input {
+  position: absolute;
+  top: 10%;
+  left: calc(50vw - 70px);
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+
+button {
+  min-width: 180px;
+}
+
+.background {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  background-color: lightsteelblue;
+  place-content: center;
+}
+
+.h-100 {
+  flex-direction: column;
+}
+
+.positive-bg-change {
+  background-color: var(--positive-bg-color);
+}
+
+.negative-bg-change {
+  background-color: var(--main-bg-color);
+}
+
+.reset {
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    display: inline;
+}
